@@ -125,6 +125,9 @@ Holds the `refs`.
 Holds the `defaults`.
 
 
+## `Clay.properties`
+Holds the concatenation of the schema's properties and all of its references properties.
+
 ## CLI
 Use it to create a simple command line utility which generates fake data:
 
