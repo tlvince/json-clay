@@ -41,6 +41,10 @@ var Clay = module.exports = function(options) {
   for (var format in formats) {
     this.validator.addFormat(format, formats[format])
   }
+
+  this.properties = this.refs.reduce(function(list, ref) {
+    return list.concat(Object.keys(ref.properties))
+  }, [])
 }
 
 Clay.prototype.validate = function(json) {
